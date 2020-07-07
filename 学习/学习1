@@ -1,0 +1,258 @@
+# # l = 100
+# #
+# # q = 1000
+# #
+# # print(l+q)
+# #
+# #
+# #
+# # #  python  靠缩进识别代码块，一个代码块是一个整体
+# #
+# # l = 1,2,3,4,5
+# #
+# # print(l)
+# #
+# #
+# # l,q,m = [1,2,3]  # 解包赋值
+# #
+# # print(l)
+# #
+# #
+# # x,y,*z = (1,2,3,4,5)
+# # print(x)
+# # print(y)
+# # print(z)
+# #
+# #
+# # l = 300
+# # q = 700
+# # l += q
+# # print(l)
+# #
+# #
+# # l = 300
+# # q = 700
+# # l == q
+# # print(l)
+# #
+# #
+# # l = 300
+# # q = 700
+# #
+# # m = l - q
+# # print(m)
+# #
+# # l = 300
+# # q = 700
+# #
+# # l -= q
+# # print(l)
+# #
+# # l = 600
+# # q = 500
+# # m = l//q
+# # print(m)
+# #
+# # l = 600
+# # q = 500
+# # m = l/q
+# # print(m)
+# #
+# # a = 85454856564
+# # b = 100
+# # c = a % b
+# # print(c)
+# #
+# #
+# #
+# # # {不及格:0-59,及格:60-70,良好:71-80,优秀:81—-100}
+# # score = 69
+# #
+# # if (score> 0 and score< 60):
+# #     print("不及格")
+# # elif(score>=60 and score <= 70):
+# #     print("及格")
+# # elif (score>= 71 and score<= 80):
+# #     print("良好")
+# # elif(score>= 81 and score<= 100):
+# #     print("优秀")
+# # else:
+# #     print("请输入正确的成绩")
+# #
+# #
+# # score_0 = [5,20,65,72,90,100]
+# # for s in score_0:
+# # if(s > 0 and s < 60):
+# #     print("不及格")
+# # elif (s >= 60 and s <= 70):
+# # print("及格")
+# # elif (s >= 71 and s <= 80):
+# # print("良好")
+# # elif (s >= 81 and s <= 100):
+# # print("优秀")
+# # else:
+# # print("请输入正确的成绩")
+#
+# a = 1
+# for l in range(10,0,-1):
+#     a *= l
+# print(a)
+
+
+
+# flag = True
+# l=50
+#
+# while flag:
+#     m = int(input("请输入数字"))
+#     if (m>l):
+#         print("大了")
+#     elif (m<l) :
+#         print("小了")
+#     else:
+#         print("猜对了")
+#         flag = False
+
+
+# for m in range(100):
+#     if m % 3 != 0:
+#         continue
+#     print(m)
+
+# def liu(l,m):
+#     print("商:",l // m,"余:",l % m)
+# liu(900,20)
+
+
+
+# def liu(l,m):
+#     if(m == 0):
+#         return None
+#     else:
+#         return(l//m,l%m)
+#
+# res = liu(l=900,m=250)
+# if res is None:
+#     print("参数错误")
+# else:
+#     print("商：",res[0],",余数:",res[1])
+
+# def liu(q,m=92):
+#         return q+m
+# print(liu(8))
+
+#
+# def liu(*avgs):
+#     m = 0
+#     for q in avgs:
+#         m+=q
+#     return m
+# print(liu(3,2003,29.9,324,9540,-3))
+
+#
+# def liu(name,*args,**kwargs):
+#     print(kwargs)
+#     print(name)
+#     q = 0
+#     for m in args:
+#         q+=m
+#         return q
+# print(liu(1,198,384,2,528))
+# print(liu(name="刘先生"))
+
+#
+# class calc():
+#     res=None
+#     def __init__(self,l,q):
+#         self.l=l
+#         self.q=q
+#
+#     def quan(self):
+#         self.res = self.l + self.q
+#
+#     def mei(self):
+#         self.res = self.l / self.q
+#
+#     def liuquanmei(self):
+#         print(self.res)
+#
+# c= calc(20,5)
+# c.quan()
+# c.liuquanmei()
+# c.mei()
+# c.liuquanmei()
+
+
+# for l in range(1,10):
+#     for m in range(1,l+1):
+#         print(m,"*",l,"=",l*m,end="\t")
+#     print()
+#
+# l=[2,4,8,9,28,920,83,828,14,243,22,131,131]
+# length = len(l)
+# for i in range(length-1,0,-1):
+#     for j in range(i):
+#         if(l[j] > l[j+1]):
+#             l[j],l[j+1]=l[j+1],l[j]
+# print(l)
+#
+
+
+# for a in range(1,10):
+#     for b in range(1,a+1):
+#         print(b,"*",a,"=",a*b,end="\t")
+#     print()
+
+
+y = [3,2,35,25,54,244,293]
+
+length = len(y)
+
+for m in range(length-1,0,-1):
+
+    for q in range(m):
+
+       if(y[q] > y[q+1]):
+
+           y[q],y[q+1] = y[q+1],y[q]
+print(y)
+
+
+
+#
+# # 输入4位数num，每位都加5,再%10后倒序输出
+#
+# num = input("请输入4位数")
+# n = ""
+# for i in num:
+#     a = str((int(i)+5)%10)
+#     n = n +a
+# m = n[::-1]
+# print(m)
+#
+
+# class Parent():
+#      money = 1032043
+#      gufen = 90
+#      __jian_kang = "jingli"
+#
+#      def shou_yi(self):
+#        print("点石成金")
+#
+# p = Parent(123)
+# print(p.a)
+#
+# class Child(Parent):
+#      shi_hao = '买豪车'
+#      def __init__(self,*args,**kwargs):
+#          super().__init__(*args,**kwargs)
+#
+# c = Child(123)
+# print(c.shi_hao)
+# print(c.money)
+# print(c.gufen)
+# c.shou_yi()
+# print(c.a)
+
+
+
